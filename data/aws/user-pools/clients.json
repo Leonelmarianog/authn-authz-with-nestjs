@@ -1,0 +1,18 @@
+{
+  "Clients": {
+    "dy84cymh67njie4bdru9g3rk2": {
+      "ClientId": "dy84cymh67njie4bdru9g3rk2",
+      "ClientName": "user-pool-dev-client",
+      "CreationDate": "2022-12-17T23:04:16.725Z",
+      "ExplicitAuthFlows": ["ALLOW_USER_PASSWORD_AUTH"],
+      "LastModifiedDate": "2022-12-17T23:04:16.725Z",
+      "TokenValidityUnits": {
+        "AccessToken": "hours",
+        "IdToken": "minutes",
+        "RefreshToken": "days"
+      },
+      "UserPoolId": "local_0tm1eyyS",
+      "AccessTokenValidity": 1
+    }
+  }
+}

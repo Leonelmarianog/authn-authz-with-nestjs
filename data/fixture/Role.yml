@@ -1,0 +1,17 @@
+entity: Role
+items:
+  admin-role:
+    name: Admin
+    permissions:
+      - '@manage-all'
+
+  user-role:
+    name: User
+    permissions:
+      - '@read-user'
+      - '@update-user'
+      - '@delete-user'
+      - '@read-post'
+      - '@create-post'
+      - '@update-post'
+      - '@delete-post'

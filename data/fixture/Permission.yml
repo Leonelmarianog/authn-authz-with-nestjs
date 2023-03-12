@@ -1,0 +1,57 @@
+entity: Permission
+items:
+  manage-all:
+    action: manage
+    subject: all
+
+  read-user:
+    action: read
+    subject: User
+
+  create-user:
+    action: create
+    subject: User
+
+  update-user:
+    action: update
+    subject: User
+    condition: '{ id: ${user.id} }'
+
+  delete-user:
+    action: delete
+    subject: User
+    condition: '{ id: ${user.id} }'
+
+  read-post:
+    action: read
+    subject: Post
+
+  create-post:
+    action: create
+    subject: Post
+
+  update-post:
+    action: update
+    subject: Post
+    condition: '{ owner: ${user.id} }'
+
+  delete-post:
+    action: delete
+    subject: Post
+    condition: '{ owner: ${user.id} }'
+
+  read-role:
+    action: read
+    subject: Role
+
+  create-role:
+    action: create
+    subject: Role
+
+  update-role:
+    action: update
+    subject: Role
+
+  delete-role:
+    action: delete
+    subject: Role
