@@ -15,12 +15,12 @@ items:
   update-user:
     action: update
     subject: User
-    condition: '{ id: ${user.id} }'
+    condition: '{ "id": ${user.id} }'
 
   delete-user:
     action: delete
     subject: User
-    condition: '{ id: ${user.id} }'
+    condition: '{ "id": ${user.id} }'
 
   read-post:
     action: read
@@ -33,12 +33,12 @@ items:
   update-post:
     action: update
     subject: Post
-    condition: '{ owner: ${user.id} }'
+    condition: '{ "owner.id": ${user.id} }'
 
   delete-post:
     action: delete
     subject: Post
-    condition: '{ owner: ${user.id} }'
+    condition: '{ "owner.id": ${user.id} }'
 
   read-role:
     action: read
