@@ -63,10 +63,21 @@
 							]
 						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "X-Amz-Target",
+								"value": "AWSCognitoIdentityProviderService.InitiateAuth",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-amz-json-1.1",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n   \"AuthParameters\" : {\r\n      \"USERNAME\" : \"johnDoe\",\r\n      \"PASSWORD\" : \"123456\"\r\n   },\r\n   \"AuthFlow\" : \"USER_PASSWORD_AUTH\",\r\n   \"ClientId\" : \"dy84cymh67njie4bdru9g3rk2\"\r\n}",
+							"raw": "{\r\n   \"AuthParameters\" : {\r\n      \"USERNAME\" : \"<USERNAME>\",\r\n      \"PASSWORD\" : \"<PASSWORD>\"\r\n   },\r\n   \"AuthFlow\" : \"USER_PASSWORD_AUTH\",\r\n   \"ClientId\" : \"dy84cymh67njie4bdru9g3rk2\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
